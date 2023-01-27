@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form action="https://formspree.io/f/xayzqnbo" method="POST">
+			<label for="name">Imię i nazwisko:</label>
+			<input type="text" name="name" id="name" /> <br />
+
+			<label for="email">Adres e-mail:</label>
+			<input type="email" name="email" id="email" /> <br />
+
+			<label for="phone">Telefon:</label>
+			<input type="tel" name="phone" id="phone" /> <br />
+
+			<label for="messege">Wiadomość:</label>
+			<textarea name="message" id="message"></textarea> <br />
+
+			<input type="submit" value="Wyślij wiadmość" />
+
+			<label for="gender">Płeć:</label>
+			<input type="radio" id="gender" name="gender" value="male" />
+			Mężczyzna
+			<input type="radio" id="gender" name="gender" value="female" />
+			Kobieta<br /><br />
+
+			<label for="city">Miasto:</label>
+			<select id="city" name="city">
+				<option value="warsaw">Warszawa</option>
+				<option value="krakow">Kraków</option>
+				<option value="gdansk">Gdańsk</option>
+				<option value="other">Inne (proszę podać):</option>
+			</select>
+			<input
+				type="text"
+				id="otherCity"
+				name="otherCity"
+				style="display: none"
+			/><br /><br />
+
+			<label for="dataConsent"
+				>Wyrażam zgodę na przetwarzanie moich danych osobowych przez
+				organizatora szkolenia w celu przeprowadzenia rejestracji oraz
+				przesłania informacji dotyczących szkolenia.</label
+			><br />
+			<input
+				type="checkbox"
+				id="dataConsent"
+				name="dataConsent"
+				value="consent"
+			/>
+			Zgoda
+			<input
+				type="checkbox"
+				id="dataConsent"
+				name="dataConsent"
+				value="noConsent"
+			/>
+			Nie wyrażam zgody<br /><br />
+
+			<input type="submit" value="Akceptuję" />
+		</form>
+	</body>
+</html>
