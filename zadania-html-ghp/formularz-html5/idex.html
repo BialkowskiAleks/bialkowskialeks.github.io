@@ -21,11 +21,14 @@
 			<textarea name="message" id="message"></textarea> <br />
 
 			<input type="submit" value="Wyślij wiadmość" />
+			<br />
 
-			<label for="gender">Płeć:</label>
-			<input type="radio" id="gender" name="gender" value="male" />
+			<label for="gender"></label>
+			<p>Płeć:</p>
+
+			<input type="radio" name="gender" value="male" />
 			Mężczyzna
-			<input type="radio" id="gender" name="gender" value="female" />
+			<input type="radio" name="gender" value="female" />
 			Kobieta<br /><br />
 
 			<label for="city">Miasto:</label>
@@ -47,20 +50,12 @@
 				organizatora szkolenia w celu przeprowadzenia rejestracji oraz
 				przesłania informacji dotyczących szkolenia.</label
 			><br />
-			<input
-				type="checkbox"
-				id="dataConsent"
-				name="dataConsent"
-				value="consent"
-			/>
+			<input type="checkbox" name="dataConsent" value="consent" />
 			Zgoda
-			<input
-				type="checkbox"
-				id="dataConsent"
-				name="dataConsent"
-				value="noConsent"
-			/>
-			Nie wyrażam zgody<br /><br />
+
+			<input type="checkbox" name="dataConsent" value="noConsent" />
+			Nie wyrażam zgody
+			<br /><br />
 
 			<input type="submit" value="Akceptuję" />
 		</form>
