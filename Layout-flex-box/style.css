@@ -1,0 +1,40 @@
+.item1 {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	color: white;
+}
+.item2 {
+	color: white;
+	background-color: green;
+	height: 100px;
+	width: 100px;
+}
+.item3 {
+	color: white;
+	background-color: pink;
+	height: 100px;
+	width: 100px;
+}
+.item4 {
+	color: white;
+	background-color: lightskyblue;
+	height: 100px;
+	width: 100px;
+}
+.item5 {
+	color: white;
+	background-color: purple;
+	height: 100px;
+	width: 100px;
+}
+
+.container {
+	width: 50%;
+	height: 700px;
+	margin: 0 auto;
+	border: 10px solid;
+}
+.container {
+	display: flex;
+}
