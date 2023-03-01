@@ -1,0 +1,44 @@
+/***/
+/*==========  5.1 - Buttons  ==========*/
+.btn-primary {
+	color: $color-text-primary;
+	background-color: $color-link;
+	border-color: $color-link;
+	text-transform: $text-transform-base;
+	padding: 10px 12px;
+	margin-bottom: $baseline;
+	font-size: 30px;
+}
+
+.btn-primary:hover {
+	color: $color-text-primary-darker;
+	background-color: $color-link-hover;
+	border-color: $color-link-hover;
+}
+
+.btn-default {
+	margin: 5px 5px 5px 0px;
+	color: $color-text-light;
+	background-color: transparent;
+	border-color: $color-text-light;
+}
+
+.btn-default:hover {
+	color: $color-text-light;
+	background-color: transparent;
+	border-color: $color-text-light;
+}
+
+.btn-success {
+	color: $color-text-primary;
+	background-color: $color-link;
+	border-color: $color-link;
+	text-transform: $text-transform-base;
+	padding: 10px 12px;
+}
+
+.btn-success:hover {
+	color: $color-text-primary-darker;
+	background-color: $color-link-hover;
+	border-color: $color-link-hover;
+}

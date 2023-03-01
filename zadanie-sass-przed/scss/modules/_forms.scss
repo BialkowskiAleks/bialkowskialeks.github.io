@@ -1,0 +1,32 @@
+/***/
+/*==========  5.3 - Forms  ==========*/
+
+form  {		
+
+	fieldset {
+		border: 0px;
+		margin: $margin-none;
+		padding: $padding-none;
+
+		p {
+			margin-bottom: $margin-none;
+			margin-top: $baseline;
+		}
+
+		input[type="text"] {
+			width: 100%;
+			height: $baseline * 2;
+			border: 1px solid $color-border;
+		}
+
+		input[type="text"]:active, input[type="text"]:hover, input[type="text"]:focus {
+			border: 1px solid $color-border;
+			box-shadow: none;
+		}
+
+		input[name="comment"], input[name="message"] {
+			height: $baseline * 7;
+			margin-bottom: $baseline * 1.5;
+		}
+	}
+}

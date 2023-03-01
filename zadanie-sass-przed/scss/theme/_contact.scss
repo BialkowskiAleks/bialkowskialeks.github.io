@@ -1,0 +1,41 @@
+/***/
+/*==========  6.6 - Contact styles  ==========*/
+
+#contact {
+	margin-top: 100px;
+
+	#map-container{
+		height: 300px;
+	}
+
+	h5 {
+		margin-top: $baseline * 3;
+	}
+
+	a {
+		text-decoration: none;
+		color: $color-text;
+	}
+
+	a:hover {
+		color: $color-primary;
+	}
+
+	p {
+		margin-bottom: $margin-none;
+		margin-top: $baseline;
+	}
+
+	.fa {
+		margin-top: $baseline;
+		font-size: $base-font-size;
+		color: $color-primary;
+	}
+}
+
+@media(min-width: 768px) and (max-width: 992px) {
+
+	#contact {
+		margin-top: 100px;
+	}
+}

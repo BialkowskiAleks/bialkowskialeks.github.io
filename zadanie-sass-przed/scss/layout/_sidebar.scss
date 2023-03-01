@@ -1,0 +1,61 @@
+/***/
+/*==========  4.4 - Sidebar styles  ==========*/
+
+.t108-sidebar {
+	margin-top: $baseline * 4;
+
+	h6 {
+		margin-top: $baseline * 2;
+	}
+
+	a {
+		color: $color-text-light;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: $color-primary;
+	}
+
+	.btn-default:hover {
+		border-color: $color-primary;
+	}
+
+	form {
+
+		.search {
+			padding-right: $padding-none;
+			position: absolute;
+			width: 85%;
+
+			.form-control {
+				border-radius: 0;
+				color: $color-text-light;
+				border-color: $color-border;
+				height: $base-font-size * 3;
+				font-size: $base-font-size;
+				box-shadow: none;
+				border-right: 0;
+			}
+
+			.form-control:hover, .form-control:active, .form-control:focus {
+				box-shadow: none;
+				border-color: $color-border;
+			}
+		}
+
+		.submit {
+			padding-left: $padding-none;
+			position: relative;
+
+			.btn-default {
+				height: $base-font-size * 3;
+				margin: $margin-none;
+				box-shadow: none;
+				color: $color-text-light;
+				border: 1px solid $color-border;
+				border-left: 0;
+			}
+		}
+	}
+}

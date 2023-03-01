@@ -1,0 +1,51 @@
+/***/
+/*==========  6.4 - Single Post styles  ==========*/
+#single-post {
+	margin-top: $margin-none;
+
+	.img-circle {
+		width: $baseline * 3;
+		height: $baseline * 3;
+	}
+
+	.comment {
+		margin-bottom: $baseline * 3;
+
+		h6 {
+			margin-bottom: $baseline * 2;
+		}
+
+		hr {
+			margin: $margin-none;
+		}
+
+		p {
+			margin-top: $baseline;
+
+			.fa-fw {
+				font-size: $base-font-size/2;
+				color: $color-primary;
+				width: $base-font-size;
+				font-variant: super;
+			}
+		}
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+@media(min-width: 768px) {
+	
+	#single-post {
+		margin-top: 100px;
+
+		.comment {
+
+			p {
+				margin-top: $margin-none;
+			}
+		}
+	}
+}

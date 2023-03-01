@@ -1,0 +1,124 @@
+/***/
+/*==========  4.1 - Header styles  ==========*/
+
+header.header-image {
+    position: relative;
+    color: $color-text-primary;
+    top: 57px;
+
+    .header-content {
+        top: 20%;
+        position: absolute;
+        z-index: 11;
+        width: 100%;
+
+        .header-content-inner {
+
+            h2 {
+                color: $color-text-primary;
+                font-size: $base-font-size * 0.7;
+                margin-bottom: $baseline * 0.5;
+                margin-top: $baseline * 0.5;
+            }
+
+            h5 {
+                color: $color-text-primary;
+                text-transform: capitalize;
+                font-size: $base-font-size * 0.6;
+                margin-bottom: $baseline * 0.5;
+                margin-top: $baseline * 0.5;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 992px) {
+
+    header.header-image {
+        top: 100px;
+
+        .header-content {
+            top: 20%;
+
+                .header-content-inner {
+
+                h2 {
+                    font-size: $base-font-size + 23;
+                    margin-bottom: $baseline;
+                    margin-top: $baseline;
+                }
+
+                h5 {
+                    font-size: $base-font-size + 4;
+                    margin-bottom: $baseline;
+                    margin-top: $baseline;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+
+    header.header-image {
+        top: 100px;
+
+        .header-content {
+            top: 20%;
+
+            .header-content-inner {
+
+                h2 {
+                    font-size: $base-font-size + 23;
+                    margin-bottom: $baseline;
+                    margin-top: $baseline;
+                }
+
+                h5 {
+                    font-size: $base-font-size + 4;
+                    margin-bottom: $baseline;
+                    margin-top: $baseline;
+                }
+            }
+        }
+    }
+}
+
+.header-contact {
+    height: 0;
+    font-size: 0;
+}
+
+@media(min-width:768px) {
+
+    .header-contact {
+    	background-color: $color-background;
+    	height: $base-font-size * 2;
+    	line-height: $base-font-size * 2;
+        font-size: $base-font-size;
+
+        .phone {
+            height: $base-font-size * 2;
+        }
+
+    	a , .phone {
+    		color: $color-text-light;
+    	}
+
+    	a:hover {
+    		color: $color-text-light;
+    	}
+
+        ul {
+            margin-bottom: $margin-none;
+
+        	.fa-twitter, .fa-facebook, .fa-linkedin, .fa-google-plus {
+        		color: $color-primary;
+        	}
+
+        	.fa-twitter:hover, .fa-facebook:hover, .fa-linkedin:hover, .fa-google-plus:hover {
+        		color: $color-primary-darker;
+        	}
+        }
+    }
+}

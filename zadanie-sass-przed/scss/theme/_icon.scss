@@ -1,0 +1,113 @@
+/***/
+/*==========  6.10 - Icon Variants styles  ==========*/
+
+#icon-variants {
+	margin-top: $margin-none;
+
+	h4 {
+		margin-top: $baseline * 4;
+	}
+
+	.divider-light-dark {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: $baseline * 2;
+	}
+
+	.about-columns {
+		margin-bottom: $baseline * 2;
+
+		.icon-about-blue, .icon-about-bright, .icon-about-dark {
+	        width: $base-font-size * 4.5;
+	        height: $base-font-size * 4.5;
+	        border-radius: 100%;
+	        line-height: $base-font-size * 4.5;
+	        color: $color-text-primary;
+	        margin: ($baseline * 2) auto $baseline;
+	    }
+	
+	    .icon-about-blue {
+			background-color: $color-primary;
+	    }
+	
+	    .icon-about-bright {
+			background-color: $color-border;
+	    }
+	
+	    .icon-about-dark {
+			background-color: $color-headings;
+	    }
+
+	    p {
+	    	margin: $margin-none auto;
+	    }
+	}
+
+    .gallery-columns {
+    	margin-top: $baseline * 2;
+
+    	.icon-services-blue, .icon-services-bright, .icon-services-dark {
+            width: $base-font-size * 4.5;
+            height: $base-font-size * 4.5;
+            border-radius: 100%;
+            line-height: $base-font-size * 4.5;
+        }
+    
+        .icon-services-blue {
+        	color: $color-primary;
+        	border: 2px solid $color-primary;
+        }
+    
+        .icon-services-bright {
+        	color: $color-border;
+        	border: 2px solid $color-border;
+        }
+    
+    	.icon-services-dark {
+        	color: $color-headings;
+        	border: 2px solid $color-headings;
+        }
+    
+        .divider-light-blue, .divider-light-bright, .divider-light-dark {
+            width: $baseline * 2;
+            margin-left: $padding-none;
+            margin-bottom: 20px;
+            max-width: $baseline * 3.3;
+        	border-width: 3px;
+        }
+    
+        .divider-light-blue {
+        	border-color: $color-primary;
+        }
+    
+        .divider-light-bright {
+        	border-color: $color-border;
+        }
+    
+        .divider-light-dark {
+        	border-color: $color-headings;
+        }
+    }
+
+    @media(max-width: 768px) {
+        
+        .gallery-columns {
+
+            .counters-box {
+                text-align: center;
+
+                .divider-light-blue, .divider-light-bright, .divider-light-dark {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+	
+	#icon-variants {
+		margin-top: 100px;
+	}
+}

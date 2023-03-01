@@ -1,0 +1,38 @@
+/***/
+/*==========  6.2 - Blog styles  ==========*/
+
+#blog {
+
+	a {
+		text-decoration: none;
+	}
+
+	a:hover h4{
+		color: $color-link;
+	}
+
+	.pager {
+		margin-bottom: $margin-none;
+		margin-top: $baseline * 2;
+
+	}
+
+	.pager a {
+		color: $color-link;
+		border-color: $color-link;
+		background-color: $color-bg-main;
+		border-radius: 4px;
+		padding: 6px 12px;
+		width: $baseline * 4.5;
+	}
+
+	.pager a:hover {
+		color:$color-link-hover;
+		border-color: $color-link-hover;
+		background-color: $color-bg-main;
+	}
+
+	.btn-primary {
+		margin-bottom: $baseline * 2;
+	}
+}

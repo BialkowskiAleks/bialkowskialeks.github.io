@@ -1,0 +1,133 @@
+/***/
+/*==========  6.9 - Common Elements styles  ==========*/
+
+#common-elements {
+	margin-top: $margin-none;
+
+	h4 {
+		margin-top: $baseline * 4;
+	}
+
+	.divider-light-dark {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: $baseline * 2;
+	}
+
+	.font-awesome {
+		margin-bottom: $baseline;
+		margin-top: $baseline;
+		
+		.fa {
+			color: $color-primary;
+		}
+	}
+
+	.toggles {
+		margin-bottom: $baseline;
+		margin-top: $baseline;
+
+		.panel-default {
+			border: 0px;
+		}
+
+		a {
+			text-decoration: none;
+			color: $color-headings;
+
+			.panel-heading {
+				width: 100%;
+				border: 1px solid $color-border;
+				background-color: $color-bg-main;
+				text-transform: uppercase;
+				box-shadow: none;
+				padding: 10px;
+				border-radius: 0px;
+				line-height: $base-font-size;
+			}
+		}
+
+		a:hover, a:focus {
+
+			.panel-heading {
+				background-color: $color-border;
+			}
+		}
+	}
+
+	.tabs {
+		margin-bottom: $baseline;
+		margin-top: $baseline;
+
+		ul {
+			border: 0;
+
+			a {
+				border-radius: 0px;
+				background-color: $color-bg-main;
+				text-transform: uppercase;
+				font-size: $base-font-size - 3;
+				border:1px solid $color-border;
+				color: $color-headings;
+			}
+		}
+
+		.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+			background-color: $color-border;
+		}
+	}
+
+	.messages-boxes {
+		margin-bottom: $baseline;
+		margin-top: $baseline;
+
+		.panel {
+			box-shadow: none;
+			border-radius: 0px;
+			height: $baseline * 3;
+			line-height: $baseline * 1.5;
+			font-size: $base-font-size/2;
+		}
+
+		@media(min-width: 768px) {
+			
+			.panel {
+				font-size: $base-font-size;
+			}
+		}
+
+		.box-white {
+			border-color: $color-border;
+		}
+
+		.box-grey {
+			border-color: $color-border;
+			background-color: $color-border;
+			color: $color-headings;
+		}
+
+		.box-blue {
+			border-color: $color-primary;
+			background-color: $color-primary;
+			color: $color-text-primary;
+		}
+	}
+
+	.list-elements {
+		margin-top: $baseline;
+
+		.fa {
+			color: $color-primary;
+			width: $base-font-size * 2;
+			font-size: $base-font-size;
+		}
+	}
+}
+
+
+@media(min-width: 768px) {
+	
+	#common-elements {
+		margin-top: 100px;
+	}
+}

@@ -1,0 +1,53 @@
+/***/
+/*==========  6.1 - Theme styles  ==========*/
+
+.t108-page {
+	margin-top: $margin-top-global;
+	margin-bottom: $margin-bottom-global;
+	margin-left: auto;
+	margin-right: auto;
+
+
+	// Blog and single post
+
+	time {
+		font-size: $base-font-size + 4;
+		font-family: $font-secondary;
+		color: $color-headings;
+		text-transform: $text-transform-base;
+	}
+
+	figure {
+		margin: ($baseline * 4) $margin-none $baseline;
+	}
+
+	.divider-light-dark {
+		margin-left: $margin-none;
+	}
+
+	.meta {
+		font-size: $base-font-size * 0.75;
+		margin-top: $baseline;
+		margin-bottom: $baseline;
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	@media(min-width: 768px) {
+		
+		.meta {
+			font-size: $base-font-size;
+			margin-top: $baseline;
+			margin-bottom: $baseline;
+		}
+	}
+}
+
+@media(max-width: 768px) {
+	
+	.t108-page {
+		margin-top: $baseline * 2;
+	}
+}

@@ -1,0 +1,111 @@
+/***/
+/*==========  6.7 - Typography styles  ==========*/
+
+#typography {
+	margin-top: $margin-none;
+
+	h4 {
+		margin-top: $baseline * 4;
+	}
+
+	.divider-light-dark {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: $baseline * 2;
+	}
+
+    .heading-uppercase {
+
+    	h1, h2, h3, h4, h5, h6 {
+    		margin-top: $baseline;
+    		margin-bottom: $baseline;
+    	}
+    }
+
+    .heading-normal {
+    	margin-bottom: $baseline;
+
+    	h1, h2, h3, h4, h5, h6 {
+    		margin-top: $baseline;
+    		margin-bottom: $baseline;
+    		text-transform: none;
+    	}
+    }
+
+    .blockquotes {
+    	
+    	blockquote {
+    		border-color: $color-primary;
+
+    		h4, h6 {
+    			font-family: "Lato Light", Helvetica, sans-serif;
+    		}
+
+    		h4 {
+    			font-size: $base-font-size + 5;
+    			margin-top: $margin-none;
+    		}
+    	}
+
+    	.blockquotes-normal, .blockquotes-source {
+
+			p {
+				font-family: "Lato Italic", Helvetica, sans-serif;
+				font-size: $base-font-size + 4;
+			}
+    	}
+
+    	.other-styles {
+    		margin-top: $baseline;
+			margin-bottom: $baseline * 2;
+
+	    	p {
+	    		margin: $margin-none;
+	    	}
+
+	    	.bold-text {
+	    		font-weight: bold;
+	    	}
+
+	    	.strike-throught {
+				text-decoration: line-through;
+			}
+	    }
+
+	    a {
+	    	text-decoration: none;
+	    }
+    }
+
+    .typography-highlights {
+    	margin-top: $baseline;
+    	margin-bottom: $baseline;
+
+    	.highlights-black {
+	    	background-color: #222222; 
+	    	color: #ffffff;
+	    }
+
+	    .highlights-mixed {
+		    background-color: #2eb6d1; 
+		    color: #222222;
+		}
+
+	    .highlights-blue {
+	    	background-color: #2eb6d1; 
+	    	color: #ffffff;
+	    }
+    }
+
+    .typography-full {
+    	margin-top: $baseline;
+    }
+}
+
+
+@media(min-width: 768px) {
+	
+	#typography {
+		margin-top: 100px;
+	}
+}

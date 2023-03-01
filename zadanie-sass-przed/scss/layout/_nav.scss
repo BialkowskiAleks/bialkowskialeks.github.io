@@ -1,0 +1,342 @@
+/***/
+/*==========  4.3 - Nav styles  ==========*/
+
+.navbar-default {
+    background-color: $color-bg-main;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+
+    .navbar-header .navbar-brand {
+        height: $base-font-size * 3.5;
+        padding: 5px;
+    }
+
+    .navbar-nav {
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        button, input[type="search"] {
+            color: $color-primary;
+            display: block;
+            padding: 5px;
+            position: relative;
+            margin-left: 15px;
+        }
+
+        input[type="search"] {
+            display: none;
+            font-size: $base-font-size - 3;
+            height: $base-font-size;
+            width: $base-font-size * 5;
+            border: 1px  solid $color-border;
+        }
+
+        .search {
+            line-height: $base-font-size * 2.6;
+        }
+
+        input[type="search"]::-webkit-input-placeholder { 
+            color: $color-primary; 
+        }
+
+        input[type="search"]::-moz-placeholder { 
+            color: $color-primary; 
+        }
+
+        input[type="search"]:-moz-placeholder { 
+            color: $color-primary; 
+        }
+
+        input[type="search"]:-ms-input-placeholder { 
+            color: $color-primary; 
+        }
+
+        .btn-search {
+            border-right: 0;
+            border-top: 0;
+            border-bottom: 0;
+            border-left: 1px solid $color-border;
+            color: $color-primary;
+            background-color: transparent;
+            margin-top: 5px;
+        }
+
+        #dropdownMenu {
+            border: 0px;
+            color: $color-text;
+            font-size: $base-font-size - 3;
+            font-weight: $font-weight-nav;
+            text-transform: uppercase;
+            background-color: $color-bg-main;
+            font-family: $font-primary;
+            margin-left: 10px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+
+            .fa-fw {
+                margin-left: 5px;
+            }
+        }
+
+        #dropdownMenu:hover {
+            color: $color-text-light;
+        }
+
+        .open .dropdown-menu {
+            left: auto;
+            right: 0;
+
+            li a {
+                color: $color-text;
+                font-size: $base-font-size - 3;
+                font-weight: $font-weight-nav;
+                text-transform: uppercase;
+                font-family: $font-primary;
+            }
+        }
+
+        .open .dropdown-menu > li > a:hover, .open .dropdown-menu > li > a:focus {
+            background-color: $color-bg-main;
+            color: $color-text-light;
+        }
+
+        .open .dropdown-menu > .active > a, .open .dropdown-menu > .active > a:hover, .open .dropdown-menu > .active > a:focus {
+            background-color: $color-bg-main;
+            color: $color-text-light;
+        }
+    }
+
+    .nav > li > a, .nav > li > a:focus {
+        text-transform: $text-transform-base;
+        font-size: $base-font-size - 3;
+        font-weight: $font-weight-nav;
+        color: $color-text;
+    }
+
+    .nav > li > a:hover, .nav> li > a:focus:hover {
+        color: $color-text-light;
+    }
+
+    .nav > li.active > a, .nav > li.active > a:focus {
+        color: $color-text-light !important;
+        background-color: $color-bg-main;
+    }
+    .nav > li.active > a:hover, .nav > li.active > a:focus:hover {
+        background-color: $color-bg-main;
+    }
+}
+
+@media(min-width:768px) {
+    
+    .navbar-default {
+        background-color: $color-bg-main;
+        top: $base-font-size * 2;
+        
+        .navbar-header .navbar-brand {
+            height: $base-font-size * 4.5;
+            padding: 25px;
+        }
+
+        .nav > li > a, .nav > li > a:focus {
+            color: $color-text-light;
+        }
+
+        .nav > li > a:hover, .nav > li > a:focus:hover {
+            color: $color-text;
+        }
+
+        .navbar-nav {
+            padding-top: 25px;
+            padding-bottom: 25px;
+
+            button, input[type="search"]{
+                color: $color-primary;
+                display: block;
+                padding: 5px;
+                position: relative;
+                margin-left: 0px;
+            }
+
+            input[type="search"] {
+                display: none;
+                height: $base-font-size;
+                width: $base-font-size * 5;
+                border: 1px solid $color-border;
+                margin-right: 10px;
+            }
+
+            .search {
+                line-height: $base-font-size * 2.6;
+            }
+
+            input[type="search"]::-webkit-input-placeholder { 
+                color: $color-primary; 
+            }
+
+            input[type="search"]::-moz-placeholder { 
+                color: $color-primary; 
+            }
+
+            input[type="search"]:-moz-placeholder { 
+                color: $color-primary; 
+            }
+
+            input[type="search"]:-ms-input-placeholder { 
+                color: $color-primary; 
+            }
+
+            .btn-search {
+                border-right: 0;
+                border-top: 0;
+                border-bottom: 0;
+                border-left: 1px solid $color-border;
+                color: $color-primary;
+                background-color: transparent;
+                margin-top: 5px;
+            }
+
+            #dropdownMenu {
+                border: 0px;
+                color: $color-text-light;
+                font-size: $base-font-size - 3;
+                font-weight: $font-weight-nav;
+                text-transform: uppercase;
+                background-color: $color-bg-main;
+                font-family: $font-primary;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                margin-left: 0;
+            }
+
+            #dropdownMenu:hover {
+                color: $color-text;
+            }
+
+            .open .dropdown-menu {
+                left: 0;
+                right: auto;
+
+                li a {
+                    color: $color-text-light;
+                    font-size: $base-font-size - 3;
+                    font-weight: $font-weight-nav;
+                    text-transform: uppercase;
+                    font-family: $font-primary;
+                }
+            }
+
+            .open .dropdown-menu > li > a:hover, .open .dropdown-menu > li > a:focus {
+                background-color: $color-bg-main;
+                color: $color-text;
+            }
+
+            .open .dropdown-menu > .active > a, .open .dropdown-menu > .active > a:hover, .open .dropdown-menu > .active > a:focus {
+                background-color: $color-bg-main;
+                color: $color-text;
+            }
+        }
+    }
+
+    .navbar-default.affix {
+        border-color: $color-border;
+        top: 0;
+
+        .navbar-header .navbar-brand {
+            height: $base-font-size * 3;
+            padding: 5px;
+        }
+
+        .navbar-nav {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .nav > li > a, .nav > li > a:focus {
+            color: $color-text;
+        }
+
+        .nav > li > a:hover {
+            color: $color-text-light;
+        }
+
+        .nav > li > a:focus:hover {
+            color: $color-text;
+        }
+
+        #dropdownMenu {
+            color: $color-text;
+        }
+
+        #dropdownMenu:hover {
+            color: $color-text-light;
+        }
+
+        .open .dropdown-menu {
+            left: 0;
+            right: auto;
+
+            li a {
+                color: $color-text;
+                font-size: $base-font-size - 3;
+                font-weight: $font-weight-nav;
+                text-transform: uppercase;
+                font-family: $font-primary;
+            }
+        }
+
+        .open .dropdown-menu > li > a:hover, .open .dropdown-menu > li > a:focus {
+            background-color: $color-bg-main;
+            color: $color-text-light;
+        }
+
+        .open .dropdown-menu > .active > a, .open .dropdown-menu > .active > a:hover, .open .dropdown-menu > .active > a:focus {
+            background-color: $color-bg-main;
+            color: $color-text-light;
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1214px) {
+
+    .navbar-default {
+
+        .container {
+            width: 100%;
+            
+            .navbar-header .navbar-brand {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-right: 0;
+                padding-left: 5px;
+
+                img {
+                    width: 140px;
+                }
+            }
+
+            input[type="search"] {
+                width: $base-font-size * 4;
+                margin-left: 5px;
+            }
+
+            .btn-search {
+                margin-left: 5px;
+            }
+
+            .navbar-nav > li > a {
+                padding: 15px 5px;
+            }
+        } 
+    }
+
+    .navbar-default.affix {
+
+        .navbar-header .navbar-brand {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 0;
+            padding-left: 5px;
+        }
+    }
+}

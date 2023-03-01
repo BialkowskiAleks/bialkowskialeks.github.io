@@ -1,0 +1,75 @@
+/***/
+/*==========  6.12 - Media styles  ==========*/
+
+#media {
+	margin-top: $margin-none;
+
+	h4 {
+		margin-top: $baseline * 4;
+	}
+
+	.divider-light-dark {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: $baseline * 2;
+	}
+
+    .media {
+		margin-top: $baseline;
+
+		figure {
+
+			margin: $margin-none;
+
+		    img {
+		    	width: 570px;
+		    	-webkit-background-size: cover;
+		        -moz-background-size: cover;
+		        background-size: cover;
+		        -o-background-size: cover;
+		        margin-bottom: $base-font-size;
+		    }
+
+		    .img-left {
+				margin-right: $base-font-size * 2;
+		    }
+
+		    .img-right {
+		    	margin-left: $base-font-size * 2;
+		    }
+		}
+		
+		.container-images {
+
+		    .img-mini {
+		    	width: 260px;
+		    	padding: $padding-none;
+		    	border: 0px;
+		    	background-color: $color-background;
+		    	color: $color-text;
+		    	margin-bottom: $margin-none;
+
+		    	img {
+			    	width: 260px;
+			    	margin-bottom: $margin-none;
+			    }
+
+			    .caption {
+
+				    p {
+				    	margin-bottom: $margin-none;
+				    	color: $color-headings;
+				    }
+				}
+		    }
+		}
+	}
+}
+
+
+@media(min-width: 768px) {
+	
+	#media {
+		margin-top: 100px;
+	}
+}

@@ -1,0 +1,99 @@
+/***/
+/*==========  3.2 - Base styles  ==========*/
+
+body {
+	-webkit-font-smoothing: antialiased;
+	font-size: $base-font-size;
+	color: $color-text;
+	font-family: $font-primary;
+
+	a, input, p {
+		font-family: $font-primary;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		text-transform: $text-transform-base;
+		color: $color-headings;
+		font-family: $font-secondary;
+		margin-bottom: $baseline;
+		margin-top: $baseline;
+	}
+
+	h1 {
+		font-size: $base-font-size + 33;
+	}
+
+	h2 {
+		font-size: $base-font-size + 23;
+	}
+
+	h3 {
+		font-size: $base-font-size + 15;
+	}
+
+	h4 {
+		font-size: $base-font-size + 9;
+	}
+
+	h5 {
+		font-size: $base-font-size + 4;
+	}
+
+	h6 {
+		font-size: $base-font-size;
+	}
+
+	a {
+    	color: $color-link;
+    	text-decoration: none;
+    }
+
+    a:hover {
+    	color: $color-link-hover;
+    }
+
+    .overlay {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    width: 100%;
+	    background-color: rgba(0,0,0,0.4);
+	    z-index: 10;
+	}
+
+    ul {
+        padding: $padding-none;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+p {
+	margin-bottom: $baseline;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+blackquote {
+	margin: 0;
+
+	font-style: italic;
+
+	cite {
+		font-size: .75rem;
+		font-style: normal;
+
+		&:before {
+			content: "- ";
+		}
+	}
+}

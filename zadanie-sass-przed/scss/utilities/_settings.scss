@@ -1,0 +1,75 @@
+//
+//
+// _settings.scss - Site settings styles (variables & definitions)
+//
+//
+
+// -------------------
+//    Typography
+// -------------------
+$base-font-size: 16px;
+$font-primary: "Raleway", Helvetica, sans-serif;
+$font-secondary: "Archivo Black", Helvetica, sans-serif;
+$text-transform-base: uppercase;
+$baseline: $base-font-size * 1.5;
+
+// -------------------
+//    Colors Scheme
+// -------------------
+// Main colors
+$color-primary: #a5e200;
+$color-primary-rgb: rgb(165, 226, 0);
+$color-primary-darker: #238a9e;
+$color-primary-darker-rgb: rgb(35, 138, 158);
+
+$color-text-primary: #ffffff;
+$color-text-primary-rgb: rgb(255, 255, 255);
+$color-text-primary-darker: #ffffff;
+$color-footer: #222222;
+
+// Typography colors
+$color-headings: #222222;
+
+$color-text: #5b5b5b;
+$color-text-light: #979797;
+
+$color-link: #a5e200;
+$color-link-hover: #88ba00;
+
+// Main element colors
+$color-bg-main: #f0f4dc;
+$color-border: #dddddd;
+$color-background: #f0f4dc;
+
+// -------------------
+//       Buttons
+// -------------------
+$color-btn-primary-bg: $color-primary;
+$color-btn-primary-text: $color-text-primary;
+$color-btn-primary-bg-hover: $color-primary-darker;
+
+// -------------------
+//       Spacing
+// -------------------
+$margin-bottom-global: ($baseline * 4);
+$margin-top-global: ($baseline * 4);
+$margin-none: 0;
+$padding-none: 0;
+
+// -------------------
+//     Positioning
+// -------------------
+$margin-multiplier: 2;
+$margin-general: $baseline * $margin-multiplier;
+
+//--------------------
+//		Navigation
+//--------------------
+$font-weight-nav: 700;
+
+//--------------------
+//		Portfolio
+//--------------------
+$width-max-img-portfolio: 650px;
+$color-portfolio-hover: rgba(34, 34, 34, 0.8);
+$position-top-text-portfolio: 50%;

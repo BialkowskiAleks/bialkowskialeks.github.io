@@ -1,0 +1,81 @@
+/***/
+/*==========  4.6 - Footer styles  ==========*/
+.list-inline {
+	a {
+		font-size: 25px;
+	}
+}
+.t108-footer {
+	background-color: $color-footer;
+
+	.footer-above {
+		padding-top: $baseline * 2;
+		padding-top: 80px;
+
+		.margin-none {
+			p {
+				margin-bottom: $margin-none;
+			}
+		}
+		.footer-col {
+			margin-bottom: $baseline * 3;
+
+			.contact,
+			.tweets {
+				padding-left: $padding-none;
+
+				p {
+					margin: $margin-none;
+				}
+
+				@media (max-width: 768px) {
+					.pull-right {
+						float: left !important;
+					}
+				}
+
+				a:hover {
+					p {
+						margin: $margin-none;
+						color: $color-primary;
+					}
+				}
+
+				.fa-twitter {
+					color: $color-primary;
+				}
+			}
+
+			.tweets {
+				a:hover {
+					color: $color-link-hover;
+				}
+			}
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: $color-primary;
+		}
+
+		.btn-default:hover {
+			border-color: $color-primary;
+		}
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: $color-text-light;
+	}
+
+	p {
+		color: $color-text-light;
+	}
+}
