@@ -1,0 +1,97 @@
+.main-header {
+	height: 700px;
+	@include flexbox;
+	@include flex-align(flex-start, center);
+	position: relative;
+
+	.header-description {
+		color: $secondary-color;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-family: $secondary-font;
+		font-weight: 700;
+	}
+
+	h1 {
+		color: #1e2528;
+		font-size: 50px;
+	}
+
+	.main-header-content {
+		color: $secondary-text-color;
+	}
+
+	.buttons-panel1 {
+		margin-top: 40px;
+
+		.reserve {
+			display: inline-block;
+			padding: 14px 20px;
+			color: #fff;
+			background-color: $primary-color;
+			text-decoration: none;
+
+			&:hover {
+				background-color: $button-color;
+			}
+		}
+
+		.watch {
+			color: $secondary-color;
+			display: inline-block;
+			margin: 15px;
+			text-decoration: none;
+
+			i {
+				height: 40px;
+				width: 40px;
+				text-align: center;
+				line-height: 40px;
+				border: 1px solid;
+				border-radius: 50%;
+				transition: all 0.3s;
+			}
+		}
+	}
+
+	.header-bg {
+		position: absolute;
+		top: 0;
+		right: 0;
+		max-width: 30%;
+		z-index: 100000;
+		display: none;
+	}
+
+	.header-flowers {
+		max-width: 8%;
+		position: absolute;
+		left: 0;
+		top: 35;
+		z-index: -1;
+	}
+
+	@media all and (min-width: $extra-large) {
+		.header-bg {
+			max-width: 40%;
+		}
+	}
+
+	@media all and (min-width: $large) {
+		.main-header-holder {
+			width: 60%;
+		}
+		.header-bg {
+			display: block;
+		}
+	}
+
+	@media all and (max-width: $extra-small) {
+		.buttons-panel1 {
+			.reserve,
+			.watch {
+				margin: 0;
+			}
+		}
+	}
+}

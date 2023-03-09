@@ -1,0 +1,26 @@
+.page-footer {
+	text-align: center;
+	padding: 30px 0;
+
+	img {
+		width: 100px;
+	}
+
+	.menu {
+		background-color: #fff;
+		padding: 20px 0;
+
+		.menu-item {
+			display: inline-block;
+			margin: 0 20px;
+			font-size: initial;
+
+			a {
+				color: $secondary-color;
+				font-weight: 700;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

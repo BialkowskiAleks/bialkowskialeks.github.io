@@ -1,0 +1,27 @@
+.row {
+	@include flexbox;
+}
+
+.col {
+	width: 100%;
+}
+
+@media all and (min-width: $medium) {
+	.col-md-50p {
+		width: 50%;
+	}
+
+	.col-md-33p {
+		width: 33.33%;
+	}
+
+	.col-md-66p {
+		width: 66.66%;
+	}
+}
+
+@media all and (min-width: $large) {
+	.col-md-25p {
+		width: 25%;
+	}
+}

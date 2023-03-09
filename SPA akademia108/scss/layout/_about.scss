@@ -1,0 +1,23 @@
+.about {
+	text-align: center;
+
+	.about-header {
+		img {
+			max-width: 100px;
+		}
+
+		.about-header-description {
+			color: $secondary-color;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 0;
+		}
+	}
+
+	.about-content {
+		max-width: 850px;
+		font-weight: 300;
+		margin: 0 auto;
+		margin-bottom: 26px;
+	}
+}
