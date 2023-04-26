@@ -20,21 +20,19 @@
 			<label for="message">Wiadomość:</label>
 			<textarea name="message" id="message"></textarea> <br />
 
-			<input type="submit" value="Wyślij wiadmość" />
+			<input type="submit" value="Wyślij wiadomość" />
 			<br />
 
-			<label for="gender"></label>
+			<label for="gender">Płeć:</label>
 			<p>Płeć:</p>
 
 			<input type="radio" name="gender" value="male" />
 			Mężczyzna
-			<p>Płeć:</p>
 			<label>
-			<input type="radio" name="gender" value="male" />
-			Mężczyzna
+				<input type="radio" name="gender" value="female" />
+				Kobieta
 			</label>
-			<input type="radio" name="gender" value="female" />
-			Kobieta<br /><br />
+			<br /><br />
 
 			<label for="city">Miasto:</label>
 			<select id="city" name="city">
@@ -50,18 +48,16 @@
 				style="display: none"
 			/><br /><br />
 
-			<label for="dataConsent"
-				>Wyrażam zgodę na przetwarzanie moich danych osobowych przez
-				organizatora szkolenia w celu przeprowadzenia rejestracji oraz
-				przesłania informacji dotyczących szkolenia.</label
-			><br />
+			<label for="dataConsent">Wyrażam zgodę na przetwarzanie moich danych osobowych przez organizatora szkolenia w celu przeprowadzenia rejestracji oraz przesłania informacji dotyczących szkolenia.</label><br />
 			<label>
-			<input id="dataConsent" type="checkbox" name="dataConsent" value="consent" />
-			Zgoda
-			<label/>
+				<input id="dataConsent" type="checkbox" name="dataConsent" value="consent" />
+				Zgoda
+			</label>
 
-			<input type="checkbox" name="dataConsent" value="noConsent" />
-			Nie wyrażam zgody
+			<label>
+				<input type="checkbox" name="dataConsent" value="noConsent" />
+				Nie wyrażam zgody
+			</label>
 			<br /><br />
 
 			<input type="submit" value="Akceptuję" />
