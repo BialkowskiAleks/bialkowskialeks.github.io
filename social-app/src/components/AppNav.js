@@ -5,23 +5,15 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const AppNav = props => {
-	const handleLogout = e => {
-		e.preventDefault();
-
-
+	const handleLogout = () => {
 		axios
-			.post("https://akademia108.pl/api/social-app/user/logout")
+			.post("http://akademia108.pl/api/social-app/user/logout")
 			.then(res => {
-				if (res.data.message) {
-					localStorage.setItem("user", null);
-					props.setUser(null);
-				}
+				console.log(res);
+				props.setUser("");
+				localStorage.removeItem("user");
 			})
-			.catch(error => {
-				console.error(error);
-				props.setUser(null);
-				localStorage.setItem("user", null);
-			});
+			.catch(error => console.error(error));
 	};
 
 	return (
