@@ -1,0 +1,38 @@
+.post {
+	display: flex;
+	border: 1px solid black;
+	margin: 5px 0;
+	border-radius: 5px;
+}
+
+.post > * {
+	padding: 5px;
+}
+
+.post .avatar img {
+	height: 50px;
+	border-radius: 50%;
+}
+
+.post .post-data {
+	width: 100%;
+}
+
+.post .post-data .post-meta {
+	display: flex;
+	padding: 5px;
+	justify-content: space-between;
+}
+
+.post .post-data .post-meta .author {
+	font-weight: 700;
+}
+
+.post .post-data .post-content {
+	text-align: left;
+	padding: 5px;
+}
+
+.post .likes {
+	text-align: right;
+}
