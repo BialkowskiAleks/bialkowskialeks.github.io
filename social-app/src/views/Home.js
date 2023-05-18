@@ -4,11 +4,12 @@ import axios from "axios";
 import Post from "../components/Post";
 import AddPost from "../components/AddPost";
 import { useEffect, useState } from "react";
+import FollowRecommendations from "../components/FollowRecommendations";
 
 const Home = props => {
 	const [posts, setPosts] = useState([]);
 
-	const getlatestPosts = () => {
+	const getLatestPosts = () => {
 		axios
 			.post("https://akademia108.pl/api/social-app/post/latest")
 			.then(res => {
@@ -46,12 +47,20 @@ const Home = props => {
 	};
 
 	useEffect(() => {
-		getlatestPosts();
+		getLatestPosts();
 	}, [props.user]);
 
 	return (
 		<div className="home">
 			{props.user && <AddPost getPrevPosts={getPrevPosts} />}
+			{props.user && (
+				<FollowRecommendations
+					user={props.user}
+					getLatestPosts={getLatestPosts}
+					posts={posts.posts}
+				/>
+			)}
+
 			<div className="post-list">
 				{posts.map(post => {
 					return (
@@ -60,6 +69,7 @@ const Home = props => {
 							setPosts={setPosts}
 							user={props.user}
 							key={post.id}
+							getLatestPosts={getLatestPosts}
 						/>
 					);
 				})}
