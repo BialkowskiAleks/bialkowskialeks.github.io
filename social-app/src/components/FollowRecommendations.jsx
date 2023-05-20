@@ -6,13 +6,13 @@ import axios from "axios";
 import "./FollowRecommendations.css";
 
 const FollowRecommendations = props => {
-	const [recommendations, setrecommendations] = useState([]);
+	const [recommendations, setRecommendations] = useState([]);
 
 	const getRecommendations = () => {
 		axios
 			.post("https://akademia108.pl/api/social-app/follows/recommendations")
 			.then(res => {
-				setrecommendations(res.data);
+				setRecommendations(res.data);
 			});
 	};
 
@@ -34,15 +34,15 @@ const FollowRecommendations = props => {
 	};
 	return (
 		<div className="followRecommendations">
-			{recommendations.map(recommendations => {
+			{recommendations.map(recommendation => {
 				return (
-					<div className="followRecommendation" key={recommendations.id}>
+					<div className="followRecommendation" key={recommendation.id}>
 						<img
-							src={recommendations.avatar_url}
-							alt={recommendations.username}
+							src={recommendation.avatar_url}
+							alt={recommendation.username}
 						/>
-						<h3>{recommendations.username}</h3>
-						<button className="btn" onClick={() => follow(recommendations.id)}>
+						<h3>{recommendation.username}</h3>
+						<button className="btn" onClick={() => follow(recommendation.id)}>
 							Follow
 						</button>
 					</div>

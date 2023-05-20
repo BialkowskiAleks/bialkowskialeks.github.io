@@ -57,7 +57,7 @@ const Home = props => {
 				<FollowRecommendations
 					user={props.user}
 					getLatestPosts={getLatestPosts}
-					posts={posts.posts}
+					posts={posts}
 				/>
 			)}
 
